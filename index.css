@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-color: rgba(64, 59, 59, 0.33);
+    background-color: rgba(155, 150, 150, 0.33);
     width: 90%;
     font-family: Arial, Helvetica, sans-serif;
     
@@ -31,7 +31,7 @@ nav#horizontal ul {
 }
 
 li {
-    float: left;
+    float: right;
     font-family: Arial, Helvetica, sans-serif;
     
 }
@@ -40,7 +40,7 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1em 1em;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     
@@ -51,4 +51,10 @@ li a:hover {
     background-color: rgba(106, 73, 232, 0.56);
     font-family: Arial, Helvetica, sans-serif;
     
+}
+
+img#logo {
+    width: 5%;
+    padding: 0;
+    clear: left;
 }
