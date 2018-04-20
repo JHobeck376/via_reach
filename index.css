@@ -1,6 +1,6 @@
 
 
-html {
+/* html {
     background-color: white;
     padding-right: 1%;
     padding-left: 1%;
@@ -57,4 +57,17 @@ img#logo {
     width: 5%;
     padding: 0;
     clear: left;
+} */
+
+a#logo > img {
+    width: 100%;
+}
+
+div#header {
+    padding-top: 0;
+}
+
+h1#logo {
+    padding-bottom: 0;
+    display: flex;
 }
