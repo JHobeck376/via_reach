@@ -8,20 +8,59 @@
   <body>
     <header></header>
     <article class="">
+      <!-- One thing that I want to add to the top of this form is the date that the web page is accessed, that way the user cannot change their form and lie. -->
       <form class="" action="index.html" method="post">
+        <!-- First Name Inputbox -->
         <label for="fName">First Name</label>
         <input type="text" name="fName" id="fName" placeholder="John">
+        <!-- Last Name Inputbox -->
         <label for="lName">Last Name</label>
         <input type="text" name="lName" id="lName" placeholder="Doe">
-        <!-- This is the date, which needs to be set to the current date of the computer. It needs to be coded in yet. -->
+        <!-- Age Spinner -->
+        <label for="age">Please select your age</label>
+        <input type="number" name="age" id="age" value="16" step="1" min="16" max="100">
+        <!-- Requested Date Calendar box -->
         <label for="reqDate">Requested Date</label>
         <input type="date" name="reqDate" id="reqDate" value="">
-        <label for="posit">Position</label>
+        <!-- Purpose Textarea -->
+        <label for="purpose">What is your purpose for volunteering?</label>
+        <textarea name="purpose" id="purpose" rows="" cols="" placeholder="Please respond with at least one sentence."></textarea>
+
+        <!-- Please select one of the following options (This is what I want stated, though not an option nor input. This just is essencially a label.) -->
+
+        <!-- Office Work Checkbox -->
+        <label for="oWork">Office Work</label>
+        <input type="checkbox" name="oWork" id="oWork">
+        <!-- Field Work Checkbox -->
+        <label for="fWork">Field Work</label>
+        <input type="checkbox" name="fWork" id="fWork">
         <!-- Office Work - Field Work, Customer Support, Website Management, App Management, Requests of Customers Online, Craigslist style  -->
         <!-- Split into two different options, where when one is pressed, a respective selection list would appear -->
-        <select class="" id="posit" name="posit">
+        <!-- <select class="" id="posit" name="posit">
           <option value=""></option>
-        </select>
+        </select> -->
+        <!-- References Checkboxes (This is a designated area for three references) -->
+        <label for="refs">Please enter the phone number of three references</label>
+        <!-- Ref 1 -->
+        <input type="text" name="refs" id="refs" placeholder="Name 1">
+        <input type="text" name="refs" id="refs" pattern="\d{3}-\d{3}-\d{4}$" placeholder="nnn-nnn-nnnn">
+        <!-- Ref 2 -->
+        <input type="text" name="refs" id="refs" placeholder="Name 2">
+        <input type="text" name="refs" id="refs" pattern="\d{3}-\d{3}-\d{4}$" placeholder="nnn-nnn-nnnn">
+        <!-- Ref 3 -->
+        <input type="text" name="refs" id="refs" placeholder="Name 3">
+        <input type="text" name="refs" id="refs" pattern="\d{3}-\d{3}-\d{4}$" placeholder="nnn-nnn-nnnn">
+        <!-- Record Box -->
+        <label for="record">Do you have a criminal record?</label>
+        <fieldset>
+          <label for="cRYes">Yes</label>
+          <input type="radio" name="cR" id="cRYes" value="yes">
+          <label for="cRNo">No</label>
+          <input type="radio" name="cR" id="cRNo" value="no">
+        </fieldset>
+        <!-- Return Checkbox -->
+        <label for="returnBox">Do you plan on returning?</label>
+        <input type="checkbox" name="returnBox" id="returnBox">
       </form>
     </article>
   </body>
