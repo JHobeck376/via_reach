@@ -7,6 +7,7 @@
     <title>ViaReach | Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="main.css">
+    <script src="scroll.js"></script>
 
 </head>
 <body>
@@ -15,9 +16,11 @@
         <img class="img-fluid" src="imgs/img3.jpg" alt="logo" id="logoSmall"> <br>
         </div>
 
-        <div id="login">
-            Username<input type="text" name="" id="">
-            Password<input type="text" name="" id="">
+        <div id="login" class="form-group">
+            <label for="Username">Username</label> 
+            <input type="text" name="Username" id="">
+            <label for="Password">Password</label>
+            <input type="text" name="Password" id="">
             <button type="button" class="btn btn-secondary">login</button>
         </div>
 
@@ -40,9 +43,63 @@
             <hr class="my-2">
             <p class="text-center">At ViaReach, our main goal is to help you and your loved ones. We provide services such as transportation, live-in assistance, home goods delivery, and more to ensure you're living comfortably and safely.</p>
             <p class="lead">
-            <a class="btn-primary btn-lg " href="#" role="button">Learn More</a>
-            </p>
+                
+                <div class="row">
+                    <div class="col-centered">
+                            <img id="arrow" src="imgs/arrow.png" alt="arrow">                            
+                    </div>
+                </div>
+                
+                <div class="row">
+                <div id="learnMore" class="col-centered">
+                  <a class="btn-primary btn-lg" role="button" onClick="document.getElementById('links').scrollIntoView();">Learn More</a>
+                </div>
+                </div>
+
+        <div id="links">
+            <div>
+                    <div class="jumbotron">
+                            <h1 class="display-3">Hello, world!</h1>
+                            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for
+                                          calling extra attention to featured content or information.</p>
+                            <hr class="my-2">
+                            <p>It uses utility classes for typography and
+                             spacing to space content out within the larger container.</p>
+                            <p class="lead">
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Some action</a>
+                            </p>
+                            </div>
             </div>
+
+            <div>
+                    <div class="jumbotron">
+                            <h1 class="display-3">Hello, world!</h1>
+                            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for
+                                          calling extra attention to featured content or information.</p>
+                            <hr class="my-2">
+                            <p>It uses utility classes for typography and
+                             spacing to space content out within the larger container.</p>
+                            <p class="lead">
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Some action</a>
+                            </p>
+                            </div>
+            </div>
+
+            <div>
+                    <div class="jumbotron">
+                            <h1 class="display-3">Hello, world!</h1>
+                            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for
+                                          calling extra attention to featured content or information.</p>
+                            <hr class="my-2">
+                            <p>It uses utility classes for typography and
+                             spacing to space content out within the larger container.</p>
+                            <p class="lead">
+                            <a class="btn btn-primary btn-lg" href="#" role="button">Some action</a>
+                            </p>
+                            </div>
+            </div>
+
+        </div>
     
 </body>
 </html>
