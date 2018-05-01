@@ -1,3 +1,22 @@
+html {
+    background-color: #007bff;
+}
+
 img#logoSmall {
-    width: 5%;
+    width: 10%;
+}
+
+div#logo {
+    float: left;
+    width: 50%;
+}
+
+div#login {
+    float: right;
+    padding-top: .5%;
+    padding-right: .5%;
+}
+
+nav {
+    clear: both;
 }
