@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ViaReach | Request</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="volunteer.css">
   </head>
   <body>
+    <div id="logo">
+    <!-- Logo -->
+    <img class="img-fluid" src="imgs/img3.jpg" alt="logo" id="logoSmall"> <br>
+    </div>
+
+    <div id="login" class="form-group">
+        <label for="Username">Username</label>
+        <input type="text" name="Username" id="">
+        <label for="Password">Password</label>
+        <input type="text" name="Password" id="">
+        <button type="button" class="btn btn-secondary">login</button>
+    </div>
+
+    <!-- nav -->
+    <nav class="navbar" style="background-color:black">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a style="color:azure" class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a style="color:azure" class="nav-link" href="story.html">Story</a></li>
+            <li class="nav-item"><a style="color:azure" class="nav-link" href="volunteer.html">Volunteer</a></li>
+            <li class="nav-item"><a style="color:azure" class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
     <article class="">
       <form class="" action="index.html" method="post">
         <!-- First Name Inputbox -->
@@ -25,7 +52,6 @@
         <input type="text" name="eContact" id="eContact" placeholder="John">
         <input type="text" name="eContact" id="eContact" placeholder="Doe">
         <input type="text" name="eContact" id="eContact" pattern="\d{3}-\d{3}-\d{4}$" placeholder="nnn-nnn-nnnn">
-        
       </form>
     </article>
   </body>
