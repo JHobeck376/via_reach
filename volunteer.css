@@ -1,3 +1,9 @@
 body form {
   text-align: center;
+  clear: both;=
+}
+
+body article.thanks {
+  text-align: center;
+  clear: both;
 }

@@ -10,28 +10,32 @@
     <link rel="stylesheet" href="volunteer.css">
   </head>
   <body>
-    <div id="logo">
-    <!-- Logo -->
-    <img class="img-fluid" src="imgs/img3.jpg" alt="logo" id="logoSmall"> <br>
-    </div>
+    <!-- <div class="container"> -->
+    <header>
+      <div id="logo">
+      <!-- Logo -->
+      <img class="img-fluid" src="imgs/img3.jpg" alt="logo" id="logoSmall"> <br>
+      </div>
 
-    <div id="login" class="form-group">
-        <label for="Username">Username</label>
-        <input type="text" name="Username" id="">
-        <label for="Password">Password</label>
-        <input type="text" name="Password" id="">
-        <button type="button" class="btn btn-secondary">login</button>
-    </div>
+      <div id="login" class="form-group">
+          <label for="Username">Username</label>
+          <input type="text" name="Username" id="">
+          <label for="Password">Password</label>
+          <input type="text" name="Password" id="">
+          <button type="button" class="btn btn-secondary">login</button>
+      </div>
 
-    <!-- nav -->
-    <nav class="navbar" style="background-color:black">
-        <ul class="nav nav-pills">
-            <li class="nav-item"><a style="color:azure" class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a style="color:azure" class="nav-link" href="story.html">Story</a></li>
-            <li class="nav-item"><a style="color:azure" class="nav-link" href="volunteer.html">Volunteer</a></li>
-            <li class="nav-item"><a style="color:azure" class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+      <!-- nav -->
+      <nav class="navbar" style="background-color:black">
+          <ul class="nav nav-pills">
+              <li class="nav-item"><a style="color:azure" class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a style="color:azure" class="nav-link" href="story.html">Story</a></li>
+              <li class="nav-item"><a style="color:azure" class="nav-link" href="volunteer.html">Volunteer</a></li>
+              <li class="nav-item"><a style="color:azure" class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+      </nav>
+    </header>
+    <!-- </div> -->
     <div class="container">
       <article class="">
         <!-- One thing that I want to add to the top of this form is the date that the web page is accessed, that way the user cannot change their form and lie. -->
@@ -51,28 +55,28 @@
           <input type="date" name="reqDate" id="reqDate" value=""></br>
           <!-- Purpose Textarea -->
           <label for="purpose">What is your purpose for volunteering?</label></br>
-          <textarea name="purpose" id="purpose" rows="" cols="" placeholder="Please respond with at least one sentence."></textarea>
+          <textarea name="purpose" id="purpose" rows="3" cols="40" placeholder="Please respond with at least one sentence."></textarea>
           <!-- References Checkboxes (This is a designated area for three references) -->
           <h3>Please Enter the Name Phone Number of Three References</h3>
           <!-- Ref 1 -->
           <div class="reference">
             <label for="refs1">Reference 1</label>
-            <input type="text" name="refs1" id="refs1" class="refs3" placeholder="First Name 1">
-            <input type="text" name="refs1" class="refs3" placeholder="Last Name 1">
+            <input type="text" name="refs1" id="refs1" class="refs3" placeholder="Sally">
+            <input type="text" name="refs1" class="refs3" placeholder="Jones">
             <input type="text" name="refs1" class="refs3" pattern="\d{3}-\d{3}-\d{4}$" placeholder="nnn-nnn-nnnn">
           </div>
           <!-- Ref 2 -->
           <div class="reference">
             <label for="refs2">Reference 2</label>
-            <input type="text" name="refs2" id="refs2" class="refs3" placeholder="First Name 2">
-            <input type="text" name="refs2" class="refs3" placeholder="Last Name 2">
+            <input type="text" name="refs2" id="refs2" class="refs3" placeholder="Jim">
+            <input type="text" name="refs2" class="refs3" placeholder="Hobecken">
             <input type="text" name="refs2" class="refs3" pattern="\d{3}-\d{3}-\d{4}$" placeholder="nnn-nnn-nnnn">
           </div>
           <!-- Ref 3 -->
           <div class="reference">
             <label for="refs3">Reference 3</label>
-            <input type="text" name="refs3" id="refs3" class="refs3" placeholder="First Name 3">
-            <input type="text" name="refs3" class="refs3" placeholder="Last Name 3">
+            <input type="text" name="refs3" id="refs3" class="refs3" placeholder="Mary">
+            <input type="text" name="refs3" class="refs3" placeholder="Smith">
             <input type="text" name="refs3" class="refs3" pattern="\d{3}-\d{3}-\d{4}$" placeholder="nnn-nnn-nnnn">
           </div>
           <!-- Record Box -->
