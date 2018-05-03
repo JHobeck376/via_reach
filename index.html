@@ -2,31 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ViaReach | Home</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ViaReach | Home</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="main.css">
 
 </head>
 
 <body>
-  <div id="logo">
-    <!-- Logo -->
-    <img class="img-fluid" src="imgs/img3.jpg" alt="logo" id="logoSmall"> <br>
-  </div>
 
-  <div id="login" class="form-group">
-    <label for="Username">Username</label>
-    <input type="text" name="Username" id="">
-    <label for="Password">Password</label>
-    <input type="text" name="Password" id="">
-    <button type="button" class="btn btn-secondary">login</button>
-  </div>
+  <!-- this is a cheat that allows the div rows to stack below the fixed nav (this element isn't visible) -->
 
-  <!-- nav -->
-  <nav class="navbar" style="background-color:black">
+  <nav class="navbar" id="notNav" style="background-color:black">
     <ul class="nav nav-pills">
       <li class="nav-item"><a style="color:azure" class="nav-link" href="index.html">Home</a></li>
       <li class="nav-item"><a style="color:azure" class="nav-link" href="story.html">Story</a></li>
@@ -35,85 +24,107 @@
     </ul>
   </nav>
 
-  <!-- banner -->
-  <img class="img-fluid" id="photobanner" src="imgs/banner1.png" alt="photobanner">
-
-  <div class="jumbotron">
-    <h1 class="display-3 text-center">Your family is our family.</h1>
-    <h1 class="lead text-center">Your priority is our priority. Your disability is our disability. And our resources are yours.</h1>
-    <hr class="my-2">
-    <p class="text-center">At ViaReach, our main goal is to help you and your loved ones. We provide services such as transportation, live-in assistance, home goods delivery, and more to ensure you're living comfortably and safely.</p>
-    <p class="lead">
-
-      <div class="row">
-        <div class="col-centered">
-          <img id="arrow" src="imgs/arrow.png" alt="arrow">
-        </div>
+  <div class="content">
+    <div class="row">
+      <div id="logo col-md-2">
+        <!-- Logo -->
+        <img class="img-fluid" src="imgs/logo.png" alt="logo" id="logoSmall"> <br>
       </div>
 
-      <div class="row">
-        <div id="learnMore" class="col-centered">
-          <a class="btn-primary btn-lg" role="button" onClick="document.getElementById('links').scrollIntoView();">Learn More</a>
+      <div id="login" class="form-group col-md-2">
+        <label for="Username">Username</label>
+        <input type="text" name="Username" id="">
+        <label for="Password">Password</label>
+        <input type="text" name="Password" id="">
+        <button type="button" class="btn btn-secondary">login</button>
+      </div>
+    </div>
+
+    <!-- nav -->
+    <nav class="navbar" id="navbar" style="background-color:black">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a style="color:azure" class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a style="color:azure" class="nav-link" href="story.html">Story</a></li>
+        <li class="nav-item"><a style="color:azure" class="nav-link" href="volunteer.html">Volunteer</a></li>
+        <li class="nav-item"><a style="color:azure" class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+
+    <!-- banner -->
+    <img class="img-fluid" id="photobanner" src="imgs/banner1.png" alt="photobanner">
+
+    <div class="jumbotron">
+      <h1 class="display-3 text-center">Your family is our family.</h1>
+      <h1 class="lead text-center">Your priority is our priority. Your disability is our disability. And our resources are yours.</h1>
+      <hr class="my-2">
+      <p class="text-center">At ViaReach, our main goal is to help you and your loved ones. We provide services such as transportation, live-in
+        assistance, home goods delivery, and more to ensure you're living comfortably and safely.</p>
+      <p class="lead">
+
+        <div class="row">
+          <div class="col-centered">
+            <img id="arrow" src="imgs/arrow.png" alt="arrow">
+          </div>
         </div>
+
+        <div class="row">
+          <div id="learnMore" class="col-centered">
+            <a class="btn-primary btn-lg" role="button" onClick="document.getElementById('links').scrollIntoView();">Learn More</a>
+          </div>
+        </div>
+
+    </div>
+
+    <img class="img-fluid" id="banner2" src="imgs/banner2.png" alt="banner2">
+
+
+    <div id="links" class="row">
+      <div class="jumbotron col-md-4 text-center">
+        <h1 class="display-5">Sign Up</h1>
+        <p class="lead">Get a free, personalized analysis of what we can do for you.</p>
+        <hr class="my-2">
+        <p>Take the survey & create an account now</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="request.html" role="button" style="background-color: orange; border: orange;">Let's Go!</a>
+        </p>
       </div>
 
-      <div id="links">
-        <div>
-          <div class="jumbotron">
-            <h1 class="display-3">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <hr class="my-2">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <p class="lead">
-                
-                <div class="row">
-                    <div class="col-centered">
-                            <img id="arrow" src="imgs/arrow.png" alt="arrow">                            
-                    </div>
-                </div>
-                
-                <div class="row">
-                <div id="learnMore" class="col-centered">
-                  <a class="btn-primary btn-lg" role="button" onClick="document.getElementById('links').scrollIntoView();">Learn More</a>
-                </div>
-                </div>
+      <div class="jumbotron col-md-4 text-center">
+        <h1 class="display-5">Our Story</h1>
+        <p class="lead">Learn more about why we do what we do.</p>
+        <hr class="my-2">
+        <p>Our company founders are passionate about their work, and understand your needs.</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="story.html" role="button" style="background-color: orange; border: orange;">Let's Go!</a>
+        </p>
+      </div>
+
+      <div class="jumbotron col-md-4 text-center">
+        <h1 class="display-5">Help Out</h1>
+        <p class="lead">ViaReach needs your help!</p>
+        <hr class="my-2">
+        <p>Apply for a job or create a volunteer account to assist those in your community.</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="volunteer.html" role="button" style="background-color: orange; border: orange;">Let's Go!</a>
+        </p>
+      </div>
+    </div>
+
+    <section>
+      <div class="row">
+        <div class="col-md-4">
+
         </div>
+        <div class="col-md-4">
 
-        
-                <img class="img-fluid" id="banner2"src="imgs/banner2.png" alt="banner2">
+        </div>
+        <div class="col-md-4">
 
-                <div id="links" class="row">
-                    <div class="jumbotron col-md-4 text-center">
-                            <h1 class="display-5">Sign Up</h1>
-                            <p class="lead">Get a free, personalized analysis of what we can do for you.</p>
-                            <hr class="my-2">
-                            <p>Take the survey & create an account now</p>
-                            <p class="lead">
-                            <a class="btn btn-primary btn-lg" href="request.html" role="button" style="background-color: orange; border: orange;">Let's Go!</a>
-                            </p>
-                </div>
-
-                    <div class="jumbotron col-md-4 text-center">
-                            <h1 class="display-5">Our Story</h1>
-                            <p class="lead">Learn more about why we do what we do.</p>
-                            <hr class="my-2">
-                            <p>Our company founders are passionate about their work, and understand your needs.</p>
-                            <p class="lead">
-                            <a class="btn btn-primary btn-lg" href="story.html" role="button" style="background-color: orange; border: orange;">Let's Go!</a>
-                            </p>
-                    </div>
-
-                    <div class="jumbotron col-md-4 text-center">
-                            <h1 class="display-5">Help Out</h1>
-                            <p class="lead">ViaReach needs your help!</p>
-                            <hr class="my-2">
-                            <p>Apply for a job or create a volunteer account to assist those in your community.</p>
-                            <p class="lead">
-                            <a class="btn btn-primary btn-lg" href="volunteer.html" role="button" style="background-color: orange; border: orange;">Let's Go!</a>
-                            </p>
-                    </div>
-                </div>
-    
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 
 </html>
