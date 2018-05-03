@@ -12,10 +12,8 @@
 </head>
 
 <body>
-
-  <!-- this is a cheat that allows the div rows to stack below the fixed nav (this element isn't visible) -->
-
-  <nav class="navbar" id="notNav" style="background-color:black">
+  <!-- nav -->
+  <nav class="navbar" id="navbar" style="background-color:black">
     <ul class="nav nav-pills">
       <li class="nav-item"><a style="color:azure" class="nav-link" href="index.html">Home</a></li>
       <li class="nav-item"><a style="color:azure" class="nav-link" href="story.html">Story</a></li>
@@ -24,37 +22,33 @@
     </ul>
   </nav>
 
-  <div class="content">
+  <div class="container-fluid login-bar">
     <div class="row">
-      <div id="logo col-md-2">
-        <!-- Logo -->
-        <img class="img-fluid" src="imgs/logo.png" alt="logo" id="logoSmall"> <br>
+      <div id="logo" class="col-md-6">
+        <img class="img-fluid" src="imgs/logo.png" alt="logo" id="logoSmall">
       </div>
 
-      <div id="login" class="form-group col-md-2">
-        <label for="Username">Username</label>
-        <input type="text" name="Username" id="">
-        <label for="Password">Password</label>
-        <input type="text" name="Password" id="">
-        <button type="button" class="btn btn-secondary">login</button>
+      <div id="login" class="col-md-6">
+        <form action="">
+          <button type="button" class="btn btn-secondary float-right">login</button>
+          <input type="text" name="Username" id="" class="float-right">
+          <label for="Username" class="float-right right-pad-10">Username</label>
+          <input type="text" name="Password" id="" class="float-right">
+          <label for="Password" class="float-right right-pad-10">Password</label>
+        </form>
       </div>
     </div>
+  </div>
 
-    <!-- nav -->
-    <nav class="navbar" id="navbar" style="background-color:black">
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a style="color:azure" class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a style="color:azure" class="nav-link" href="story.html">Story</a></li>
-        <li class="nav-item"><a style="color:azure" class="nav-link" href="volunteer.html">Volunteer</a></li>
-        <li class="nav-item"><a style="color:azure" class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <img class="img-fluid" id="photobanner" src="imgs/banner1.png" alt="photobanner">
+    </div>
+  </div>
 
 
-    <!-- banner -->
-    <img class="img-fluid" id="photobanner" src="imgs/banner1.png" alt="photobanner">
-
-    <div class="jumbotron">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container-fluid">
       <h1 class="display-3 text-center">Your family is our family.</h1>
       <h1 class="lead text-center">Your priority is our priority. Your disability is our disability. And our resources are yours.</h1>
       <hr class="my-2">
@@ -73,16 +67,22 @@
             <a class="btn-primary btn-lg" role="button" onClick="document.getElementById('links').scrollIntoView();">Learn More</a>
           </div>
         </div>
-
     </div>
+  </div>
 
-    <img class="img-fluid" id="banner2" src="imgs/banner2.png" alt="banner2">
+  <div class="container-fluid">
+    <div class="row">
+      <img class="img-fluid" id="banner2" src="imgs/banner2.png" alt="banner2">
+    </div>
+  </div>
 
-
-    <div id="links" class="row">
-      <div class="jumbotron col-md-4 text-center">
-        <h1 class="display-5">Sign Up</h1>
-        <p class="lead">Get a free, personalized analysis of what we can do for you.</p>
+  <div class="container-fluid">
+    <div id="links" class="row link-blocks">
+      <div class="col-md-4 text-center link-block">
+        <div class="link-header">
+          <h1 class="display-5">Sign Up</h1>
+          <p class="lead">Get a free, personalized analysis of do for you.</p>
+        </div>
         <hr class="my-2">
         <p>Take the survey & create an account now</p>
         <p class="lead">
@@ -90,9 +90,11 @@
         </p>
       </div>
 
-      <div class="jumbotron col-md-4 text-center">
-        <h1 class="display-5">Our Story</h1>
-        <p class="lead">Learn more about why we do what we do.</p>
+      <div class="col-md-4 text-center link-block">
+        <div class="link-header">
+          <h1 class="display-5">Our Story</h1>
+          <p class="lead">Learn more about why we do what we do.</p>
+        </div>
         <hr class="my-2">
         <p>Our company founders are passionate about their work, and understand your needs.</p>
         <p class="lead">
@@ -100,9 +102,11 @@
         </p>
       </div>
 
-      <div class="jumbotron col-md-4 text-center">
-        <h1 class="display-5">Help Out</h1>
-        <p class="lead">ViaReach needs your help!</p>
+      <div class="col-md-4 text-center link-block">
+        <div class="link-header">
+          <h1 class="display-5">Help Out</h1>
+          <p class="lead">ViaReach needs your help!</p>
+        </div>
         <hr class="my-2">
         <p>Apply for a job or create a volunteer account to assist those in your community.</p>
         <p class="lead">
@@ -110,19 +114,23 @@
         </p>
       </div>
     </div>
+  </div>
 
-    <section>
-      <div class="row">
-        <div class="col-md-4">
+  <div class="container-fluid">
+    <div class="col-sm-12">
+      <section>
+        <div class="row">
+          <div class="col-md-4">
 
+          </div>
+          <div class="col-md-4">
+
+          </div>
+          <div class="col-md-4">
+
+          </div>
         </div>
-        <div class="col-md-4">
-
-        </div>
-        <div class="col-md-4">
-
-        </div>
-      </div>
+    </div>
     </section>
   </div>
 </body>

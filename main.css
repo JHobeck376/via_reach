@@ -3,14 +3,19 @@ html {
 }
 
 img#logoSmall {
-    margin-top: 60px;
-    width: 10%;
-    margin-left: 10px;
+    width: 150px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 img#banner2 {
     width: 100%;
 }
+
+img#photobanner {
+    max-height: 300px;
+}
+
 
 /* div#logo {
     float: left;
@@ -19,14 +24,15 @@ img#banner2 {
 }
 */
 
-div.row#login {
+/* div.row#login {
     float: right;
-} 
+}  */
 
 #navbar {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 #notNav {
@@ -49,4 +55,37 @@ img#arrow {
 body {
     background-color: orange;
     width: 100%;
+}
+
+.content {
+    margin-top: 56px;
+}
+
+.right-pad-10 {
+    padding-right: 10px;
+}
+
+.login-bar {
+    margin-top: 56px;
+    margin-bottom: -20px;
+}
+
+.link-blocks {
+    margin-top: 25px;
+    background-color:white;
+}
+
+.link-block {
+    margin-top: 10px;
+}
+
+.link-header {
+    min-height: 116px;
+}
+
+/* Media queries */
+@media (min-width: 992px) { 
+    /* img#photobanner{
+        height: 200px;
+    } */
 }
