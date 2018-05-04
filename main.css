@@ -3,17 +3,19 @@ html {
 }
 
 img#logoSmall {
-    width: 150px;
+    width: 40%;
     padding-left: 10px;
     padding-top: 10px;
 }
 
 img#banner2 {
     width: 100%;
+    height: 100%;
 }
 
 img#photobanner {
-    max-height: 300px;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -24,9 +26,9 @@ img#photobanner {
 }
 */
 
-/* div.row#login {
+div.row#login {
     float: right;
-}  */
+} 
 
 #navbar {
     position: fixed;
@@ -53,8 +55,12 @@ img#arrow {
 }
 
 body {
-    background-color: orange;
+    /* background-color: orange; */
     width: 100%;
+}
+
+#toprow {
+    background-color: orange;
 }
 
 .content {
@@ -84,8 +90,39 @@ body {
 }
 
 /* Media queries */
-@media (min-width: 992px) { 
-    /* img#photobanner{
-        height: 200px;
-    } */
+
+/* @media only screen and (min-width: 400px) { 
+    img#logoSmall {
+        width: 20%;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+} */
+
+@media only screen and (max-width: 767px) { 
+    #toprow {
+        /* min-height: 180px; */
+        content: "";
+    }
+
+    img#logoSmall {
+        width: 100%;
+        max-width: 76px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) { 
+    #toprow {
+        min-height: 100px;
+        max-height: 120px;
+    }
+    img#logoSmall {
+        width: 80%;
+        max-width: 115px;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
 }
