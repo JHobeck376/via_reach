@@ -7,12 +7,3 @@ body article.thanks {
   text-align: center;
   clear: both;
 }
-
-/*Validation Styles*/
-input#fName:focus:valid, input#lName:focus:valid{
-  background-color: rgb(152, 251, 152);
-}
-
-input#fName:focus:invalid, input#lName:focus:invalid{
-  background-color: rgb(255, 153, 153);
-}
