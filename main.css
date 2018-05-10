@@ -126,3 +126,38 @@ body {
         padding-top: 10px;
     }
 }
+
+li {
+    list-style: none;
+}
+
+footer {
+    padding-top: 2%;
+    margin-top: 5%;
+    padding-bottom: 2%;
+    
+}
+
+ a {
+    color: white;
+    text-decoration-color: white;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: orange;
+    text-decoration-color: orange;
+    text-decoration: underline;
+}
+
+h6 {
+    color: black;
+}
+
+hr {
+    width: 80%;
+}
+
+p#footer {
+    text-align: center;
+}
