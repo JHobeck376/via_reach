@@ -42,19 +42,19 @@
         <div class="form-group col-sm-2 col-md-2 col-lg-1 align-self-center">
           <button type="button" class="form-control btn btn-secondary ">login</button>
         </div>
-      </form>
         <!-- </div> -->
       </div>
     </div>
     <article class="">
       <form class="" action="serviceReq.html" method="post">
+        <br>
         <h3>Please fill out the form below</h3>
         <!-- First Name Inputbox -->
         <label for="fName">First Name</label>
-        <input type="text" name="fName" id="fName" placeholder="John"><br>
+        <input type="text" name="fName" id="fName" placeholder="John" required><br>
         <!-- Last Name Inputbox -->
         <label for="lName">Last Name</label>
-        <input type="text" name="lName" id="lName" placeholder="Doe"><br>
+        <input type="text" name="lName" id="lName" placeholder="Doe" required><br>
         <!-- Age Spinner -->
         <label for="age">Please select your age</label>
         <input type="number" name="age" id="age" value="16" step="1" min="16" max="100"><br>
@@ -64,9 +64,9 @@
         <!-- Emergency Contact -->
         <h3>Please enter the name and number of your emergency contact</h3>
         <!-- EContact Name Inputboxes -->
-        <input type="text" name="eContact" id="eContact" placeholder="James">
-        <input type="text" name="eContact" id="eContact" placeholder="Johnson">
-        <input type="text" name="eContact" id="eContact" pattern="\d{3}-\d{3}-\d{4}$" placeholder="nnn-nnn-nnnn"><br><br>
+        <input type="text" name="eContact1" id="eContact1" placeholder="James" required>
+        <input type="text" name="eContact2" id="eContact2" placeholder="Johnson" required>
+        <input type="text" name="eContact3" id="eContact3" pattern="\d{3}-\d{3}-\d{4}$" placeholder="nnn-nnn-nnnn" required><br><br>
         <!-- Continue to Part 2 Button -->
         <input type="submit" name="serviceReq" id="serviceReq" value="Request Your Services">
       </form>
@@ -74,7 +74,7 @@
   </body>
 
   <footer style="background-color: #007bff; color: white;">
-    
+
       <hr>
       <br>
       <div class="container-fluid">

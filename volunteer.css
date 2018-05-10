@@ -7,3 +7,24 @@ body article.thanks {
   text-align: center;
   clear: both;
 }
+
+
+input#fName:focus:invalid, input#lName:focus:invalid, input#purpose:focus:invalid, input#refs1:focus:invalid, input#refs2:focus:invalid, input#refs3:focus:invalid, input#refs4:focus:invalid, input#refs5:focus:invalid, input#refs6:focus:invalid, input#refs7:focus:invalid  {
+  background-color: rgb(240, 128, 128);
+}
+
+input#refs8:focus:invalid, input#refs9:focus:invalid, input#eContact1:focus:invalid, input#eContact2:focus:invalid, input#eContact3:focus:invalid {
+  background-color: rgb(240, 128, 128);
+}
+
+input#fName:focus:valid, input#lName:focus:valid, input#purpose:focus:valid, input#refs1:focus:valid, input#refs2:focus:valid, input#refs3:focus:valid, input#refs4:focus:valid, input#refs5:focus:valid, input#refs6:focus:valid, input#refs7:focus:valid  {
+  background-color: rgb(152,251,152);
+}
+
+input#refs8:focus:valid, input#refs9:focus:valid, input#eContact1:focus:valid, input#eContact2:focus:valid, input#eContact3:focus:valid {
+  background-color: rgb(152,251,152);
+}
+
+button {
+  background-color: rgb(152, 251, 152);
+}
