@@ -8,38 +8,51 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="volunteer.css">
+    <link rel="shortcut icon" href="imgs/fav.ico" type="image/x-icon">    
+
   </head>
   <body>
-    <!-- <div class="container"> -->
-    <header>
-      <div id="logo">
-      <!-- Logo -->
-      <img class="img-fluid" src="imgs/img3.jpg" alt="logo" id="logoSmall"> <br>
-      </div>
+    <!-- nav -->
+    <nav class="navbar" id="navbar" style="background-color:black">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a style="color:azure" class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a style="color:azure" class="nav-link" href="story.html">Story</a></li>
+        <li class="nav-item"><a style="color:azure" class="nav-link" href="volunteer.html">Volunteer</a></li>
+        <li class="nav-item"><a style="color:azure" class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-      <div id="login" class="form-group">
-          <label for="Username">Username</label>
-          <input type="text" name="Username" id="">
-          <label for="Password">Password</label>
-          <input type="text" name="Password" id="">
-          <button type="button" class="btn btn-secondary">login</button>
-      </div>
+    <div class="container-fluid login-bar">
+      <div id="toprow" class="row">
+        <div id="logo" class="col-sm-2 col-md-2">
+          <img class="img-fluid" src="imgs/logo.png" alt="logo" id="logoSmall">
+        </div>
 
-      <!-- nav -->
-      <nav class="navbar" style="background-color:black">
-          <ul class="nav nav-pills">
-              <li class="nav-item"><a style="color:azure" class="nav-link" href="index.html">Home</a></li>
-              <li class="nav-item"><a style="color:azure" class="nav-link" href="story.html">Story</a></li>
-              <li class="nav-item"><a style="color:azure" class="nav-link" href="volunteer.html">Volunteer</a></li>
-              <li class="nav-item"><a style="color:azure" class="nav-link" href="contact.html">Contact</a></li>
-          </ul>
-      </nav>
-    </header>
+        <!-- <div id="login" class="col-sm-10 col-md-10 "> -->
+        <!-- <form action="">
+              <div class="form-group col-sm-2 col-md-4"> -->
+
+        <div class="form-group col-sm-3 col-md-2">
+          <label for="Username" class="">Username</label>
+          <input type="text" name="Username" id="" class="form-control">
+        </div>
+        <div class="form-group col-sm-3 col-md-2">
+          <label for="Password" class="">Password</label>
+          <input type="text" name="Password" id="" class="form-control">
+        </div>
+
+        <div class="form-group col-sm-2 col-md-2 col-lg-1 align-self-center">
+          <button type="button" class="form-control btn btn-secondary ">login</button>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
     <!-- </div> -->
     <div class="container">
       <article class="">
         <!-- One thing that I want to add to the top of this form is the date that the web page is accessed, that way the user cannot change their form and lie. -->
         <form class="" action="offWork.html" method="get">
+          <br>
           <h3>Please fill out the form below</h3>
           <!-- First Name Inputbox -->
           <label for="fName">First Name</label>
@@ -55,29 +68,29 @@
           <input type="date" name="reqDate" id="reqDate" value=""></br>
           <!-- Purpose Textarea -->
           <label for="purpose">What is your purpose for volunteering?</label></br>
-          <textarea name="purpose" id="purpose" rows="3" cols="40" placeholder="Please respond with at least one sentence."></textarea>
+          <textarea name="purpose" id="purpose" rows="3" cols="40" placeholder="Please respond with at least one sentence." required></textarea>
           <!-- References Checkboxes (This is a designated area for three references) -->
           <h3>Please Enter the Name Phone Number of Three References</h3>
           <!-- Ref 1 -->
           <div class="reference">
             <label for="refs1">Reference 1</label>
-            <input type="text" name="refs1" id="refs1" class="refs3" placeholder="Sally">
-            <input type="text" name="refs1" class="refs3" placeholder="Jones">
-            <input type="text" name="refs1" class="refs3" pattern="\d{3}-\d{3}-\d{4}$" placeholder="nnn-nnn-nnnn">
+            <input type="text" name="refs1" id="refs1" placeholder="Sally" required>
+            <input type="text" name="refs1" id="refs4" placeholder="Jones" required>
+            <input type="text" name="refs1" id="refs5" pattern="\d{3}-\d{3}-\d{4}$" placeholder="nnn-nnn-nnnn" required>
           </div>
           <!-- Ref 2 -->
           <div class="reference">
             <label for="refs2">Reference 2</label>
-            <input type="text" name="refs2" id="refs2" class="refs3" placeholder="Jim">
-            <input type="text" name="refs2" class="refs3" placeholder="Hobecken">
-            <input type="text" name="refs2" class="refs3" pattern="\d{3}-\d{3}-\d{4}$" placeholder="nnn-nnn-nnnn">
+            <input type="text" name="refs2" id="refs2" class="refs3" placeholder="Jim" required>
+            <input type="text" name="refs2" id="refs6" placeholder="Hobecken" required>
+            <input type="text" name="refs2" id="refs7" pattern="\d{3}-\d{3}-\d{4}$" placeholder="nnn-nnn-nnnn" required>
           </div>
           <!-- Ref 3 -->
           <div class="reference">
             <label for="refs3">Reference 3</label>
-            <input type="text" name="refs3" id="refs3" class="refs3" placeholder="Mary">
-            <input type="text" name="refs3" class="refs3" placeholder="Smith">
-            <input type="text" name="refs3" class="refs3" pattern="\d{3}-\d{3}-\d{4}$" placeholder="nnn-nnn-nnnn">
+            <input type="text" name="refs3" id="refs3" class="refs3" placeholder="Mary" required>
+            <input type="text" name="refs3" id="refs8" placeholder="Smith" required>
+            <input type="text" name="refs3" id="refs9" pattern="\d{3}-\d{3}-\d{4}$" placeholder="nnn-nnn-nnnn" required>
           </div>
           <!-- Record Box -->
           <label for="record">Do you have a criminal record?</label>
@@ -97,5 +110,46 @@
         </form>
     </article>
     </div>
+
+    <footer style="background-color: #007bff; color: white;">
+      
+        <hr>
+        <br>
+        <div class="container-fluid">
+          <div class="col-sm-12">
+            <section>
+              <div class="row">
+                <div class="col-md-4">
+                  <ul>
+                    <h6>ViaReach</h6>
+                    <li>ViaReach  &copy; 2018</li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Agency Resources</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul>
+                      <h6>Projects</h6>
+                      <li><a href="#">Future Developments</a></li>
+                      <li><a href="#">Merch</a></li>
+                      <li><a href="#">Little Hands &trade;</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul>
+                      <h6>Contact</h6>
+                      <li><a href="contact.html">Visit Contact Page</a></li>
+                      <li>12345 N 1st Ave</li>
+                      <li> Sun City, Arizona 85379</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <br>
+          <p id="footer" style="color:gainsboro;">Web Authors: | Yamillex Godinez | Jacob Hobeck | Grace Kelly </p>
+          </section>
+        </div>
+      </footer>
+
   </body>
 </html>
