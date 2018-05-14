@@ -25,7 +25,7 @@ input#refs8:focus:valid, input#refs9:focus:valid, input#eContact1:focus:valid, i
   background-color: rgb(152,251,152);
 }
 
-button#button1, button#button2, button#button3, input#offWork, input#fieldWork, input#done {
+button#button1, button#button2, button#button3, input#offWork, input#fieldWork, input#done, input#serviceReq {
   background-color: orange;
   color: white;
 }

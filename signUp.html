@@ -50,8 +50,7 @@
     <!-- </div> -->
     <div class="container">
       <article class="">
-        <!-- One thing that I want to add to the top of this form is the date that the web page is accessed, that way the user cannot change their form and lie. -->
-        <form class="" action="offWork.html" method="post">
+        <form class="" action="thanksSign.html" method="post">
           <br>
           <h3>Please fill out the form below</h3>
           <!-- First Name Inputbox -->
@@ -63,50 +62,40 @@
           <!-- Age Spinner -->
           <label for="age">Please select your age</label></br>
           <input type="number" name="age" id="age" value="16" step="1" min="16" max="100"></br></br>
-          <!-- Requested Date Calendar box -->
-          <label for="reqDate">Requested Date</label>
-          <input type="date" name="reqDate" id="reqDate" value=""></br>
-          <!-- Purpose Textarea -->
-          <label for="purpose">What is your purpose for volunteering?</label></br>
-          <textarea name="purpose" id="purpose" rows="3" cols="40" placeholder="Please respond with at least one sentence." required></textarea>
-          <!-- References Checkboxes (This is a designated area for three references) -->
-          <h3>Please Enter the Name Phone Number of Three References</h3>
-          <!-- Ref 1 -->
-          <div class="reference">
-            <label for="refs1">Reference 1</label>
-            <input type="text" name="refs1" id="refs1" placeholder="Sally" required>
-            <input type="text" name="refs1" id="refs4" placeholder="Jones" required>
-            <input type="text" name="refs1" id="refs5" pattern="\d{3}-\d{3}-\d{4}$" placeholder="nnn-nnn-nnnn" required>
-          </div>
-          <!-- Ref 2 -->
-          <div class="reference">
-            <label for="refs2">Reference 2</label>
-            <input type="text" name="refs2" id="refs2" class="refs3" placeholder="Jim" required>
-            <input type="text" name="refs2" id="refs6" placeholder="Hobecken" required>
-            <input type="text" name="refs2" id="refs7" pattern="\d{3}-\d{3}-\d{4}$" placeholder="nnn-nnn-nnnn" required>
-          </div>
-          <!-- Ref 3 -->
-          <div class="reference">
-            <label for="refs3">Reference 3</label>
-            <input type="text" name="refs3" id="refs3" class="refs3" placeholder="Mary" required>
-            <input type="text" name="refs3" id="refs8" placeholder="Smith" required>
-            <input type="text" name="refs3" id="refs9" pattern="\d{3}-\d{3}-\d{4}$" placeholder="nnn-nnn-nnnn" required>
-          </div>
-          <!-- Record Box -->
-          <label for="record">Do you have a criminal record?</label>
+          <label for="">Do you have an inability to:</label>
+          <h5 id="walk">Walk</h5>
           <fieldset>
             <label for="cRYes">Yes</label>
             <input type="radio" name="cRec" id="cRecYes" value="yes">
             <label for="cRNo">No</label>
             <input type="radio" name="cRec" id="cRecNo" value="no">
           </fieldset>
-          <!-- Return Checkbox -->
-          <label for="returnBox">Do you plan on returning?</label>
-          <input type="checkbox" name="returnBox" id="returnBox">
-          <p>Please select which field of work best interests you.</p>
-          <!-- These buttons send the user information to two different places. This is done by the action of the form and the formaction attribute, which overrides the form action and sends the information to its own designated location. -->
-          <input type="submit" name="offWork" id="offWork" value="Office Work">
-          <input type="submit" name="fieldWork" id="fieldWork" value="Field Work" formaction="fieldwork.html">
+          <h5 id="drive">Drive</h5>
+          <fieldset>
+            <label for="cRYes">Yes</label>
+            <input type="radio" name="cRec" id="cRecYes" value="yes">
+            <label for="cRNo">No</label>
+            <input type="radio" name="cRec" id="cRecNo" value="no">
+          </fieldset>
+          <h5 id="groceries">Get Groceries</h5>
+          <fieldset>
+            <label for="cRYes">Yes</label>
+            <input type="radio" name="cRec" id="cRecYes" value="yes">
+            <label for="cRNo">No</label>
+            <input type="radio" name="cRec" id="cRecNo" value="no">
+          </fieldset>
+          <h5 id="navigate">Navigate an Event</h5>
+          <fieldset>
+            <label for="cRYes">Yes</label>
+            <input type="radio" name="cRec" id="cRecYes" value="yes">
+            <label for="cRNo">No</label>
+            <input type="radio" name="cRec" id="cRecNo" value="no">
+          </fieldset>
+          <!-- Other Textarea -->
+          <label for="purpose">Do you have any disabilities that we have not thought of?</label></br>
+          <textarea name="purpose" id="purpose" rows="3" cols="40" placeholder="Please kindly inform us of how we can better help you."></textarea><br>
+          <!-- Complete Form -->
+          <input type="submit" name="done" id="done" value="Complete Form">
         </form>
     </article>
     </div>
