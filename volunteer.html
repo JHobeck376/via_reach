@@ -56,19 +56,19 @@
           <h3>Please fill out the form below</h3>
           <!-- First Name Inputbox -->
           <label for="fName">First Name</label>
-          <input type="text" name="fName" id="fName" placeholder="John" required></br>
+          <input type="text" name="fName" id="fName" data-fname="First Name" placeholder="John" required></br>
           <!-- Last Name Inputbox -->
           <label for="lName">Last Name</label>
           <input type="text" name="lName" id="lName" placeholder="Doe" required></br>
           <!-- Age Spinner -->
           <label for="age">Please select your age</label></br>
-          <input type="number" name="age" id="age" step="1" min="16" max="100"></br></br>
+          <input type="number" name="age" id="age" step="1" min="16" max="100" required></br></br>
           <!-- Requested Date Calendar box -->
           <label for="reqDate">Requested Date</label>
-          <input type="date" name="reqDate" id="reqDate" value=""></br>
+          <input type="date" name="reqDate" id="reqDate" value="" required></br>
           <!-- Purpose Textarea -->
           <label for="purpose">What is your purpose for volunteering?</label></br>
-          <textarea name="purpose" id="purpose" rows="3" cols="40" placeholder="Please respond with at least one sentence." required></textarea>
+          <textarea name="purpose" id="purpose" rows="3" cols="40" placeholder="Please respond with at least one sentence." required></textarea><br>
           <!-- References Checkboxes (This is a designated area for three references) -->
           <h3>Please Enter the Name Phone Number of Three References</h3>
           <!-- Ref 1 -->
@@ -103,7 +103,7 @@
           <!-- Return Checkbox -->
           <label for="returnBox">Do you plan on returning?</label>
           <input type="checkbox" name="returnBox" id="returnBox">
-          <p>Please select which field of work best interests you.</p>
+          <h5>Please select which field of work best interests you.</h5>
           <!-- These buttons send the user information to two different places. This is done by the action of the form and the formaction attribute, which overrides the form action and sends the information to its own designated location. -->
           <input type="submit" name="done" id="done" value="Office Work">
           <input type="submit" name="done" id="done" value="Field Work" formaction="fieldwork.html">
@@ -150,6 +150,8 @@
           </section>
         </div>
       </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="verification.js"></script>
+
   </body>
 </html>
