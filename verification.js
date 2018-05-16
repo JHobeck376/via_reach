@@ -88,7 +88,7 @@ function validateRef1Num() {
   var refNum = document.getElementById("refs5");
   if(refNum.validity.valueMissing){
     refNum.setCustomValidity("Please enter your First Reference's Number");
-  }else if(cardNumber.validity.patternMismatch){
+  }else if(refNum.validity.patternMismatch){
     refNum.setCustomValidity("Please enter a Valid Phone Number");
   }else{
     refNum.setCustomValidity("")
@@ -117,7 +117,7 @@ function validateRef2Num() {
   var refNum = document.getElementById("refs7");
   if(refNum.validity.valueMissing){
     refNum.setCustomValidity("Please enter your Second Reference's Number");
-  }else if(cardNumber.validity.patternMismatch){
+  }else if(refNum.validity.patternMismatch){
     refNum.setCustomValidity("Please enter a Valid Phone Number");
   }else{
     refNum.setCustomValidity("")
@@ -146,7 +146,7 @@ function validateRef3Num() {
   var refNum = document.getElementById("refs9");
   if(refNum.validity.valueMissing){
     refNum.setCustomValidity("Please enter your Third Reference's Number");
-  }else if(cardNumber.validity.patternMismatch){
+  }else if(refNum.validity.patternMismatch){
     refNum.setCustomValidity("Please enter a Valid Phone Number");
   }else{
     refNum.setCustomValidity("")

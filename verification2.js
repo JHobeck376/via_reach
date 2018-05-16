@@ -68,7 +68,7 @@ function validateEContactNum() {
   var refNum = document.getElementById("eContact3");
   if(refNum.validity.valueMissing){
     refNum.setCustomValidity("Please enter your Emergency Contact's Number");
-  }else if(cardNumber.validity.patternMismatch){
+  }else if(refNum.validity.patternMismatch){
     refNum.setCustomValidity("Please enter a Valid Phone Number");
   }else{
     refNum.setCustomValidity("")
