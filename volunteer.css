@@ -8,6 +8,9 @@ body article.thanks {
   clear: both;
 }
 
+textarea {
+  resize: none;
+}
 
 input#fName:focus:invalid, input#lName:focus:invalid, input#purpose:focus:invalid, input#refs1:focus:invalid, input#refs2:focus:invalid, input#refs3:focus:invalid, input#refs4:focus:invalid, input#refs5:focus:invalid, input#refs6:focus:invalid, input#refs7:focus:invalid  {
   background-color: rgb(240, 128, 128);
